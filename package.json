@@ -1,0 +1,26 @@
+{
+  "name": "convertcraft",
+  "version": "1.0.0",
+  "description": "Production-ready, client-side-first image and PDF conversion web application.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "image-converter",
+    "pdf-converter",
+    "jpg-to-pdf",
+    "png-to-jpg",
+    "webp-converter",
+    "client-side",
+    "vanilla-js"
+  ],
+  "author": "ConvertCraft Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

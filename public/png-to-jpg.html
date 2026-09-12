@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convert PNG to JPG Online - 100% Free, Private & Batch | ConvertCraft</title>
+  <meta name="description" content="Convert PNG to high quality JPG with clean white background handling for transparent images. Batch convert multiple PNG files into a ZIP archive instantly in your browser." />
+  <meta name="keywords" content="png to jpg, convert png to jpg, batch png converter, transparent png to jpg, compress png" />
+
+  <!-- Open Graph / Schema.org -->
+  <meta property="og:title" content="Convert PNG to JPG Online - Fast & Private" />
+  <meta property="og:description" content="Quickly convert PNG images to JPG with customizable compression and clean white background fill." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ConvertCraft PNG to JPG Converter",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Convert PNG images to compressed JPG files with intelligent white background handling for transparent graphics."
+  }
+  </script>
+
+  <!-- Unified Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Third-Party Libraries (CDN only) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body data-target-format="jpeg">
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="ConvertCraft Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+        </div>
+        <span>Convert<span class="hero-gradient-text">Craft</span></span>
+        <span class="brand-badge">PRO</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <div class="nav-dropdown">
+          <button type="button" class="dropdown-toggle" aria-expanded="false">
+            <span>Tools</span>
+            <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item">
+              <div>
+                <strong>All Tools (Workspace)</strong>
+                <span class="dropdown-item-desc">Universal image & PDF workshop</span>
+              </div>
+            </a>
+            <a href="jpg-to-pdf.html" class="dropdown-item">
+              <div>
+                <strong>JPG to PDF</strong>
+                <span class="dropdown-item-desc">Compile multi-page PDF documents</span>
+              </div>
+            </a>
+            <a href="png-to-jpg.html" class="dropdown-item">
+              <div>
+                <strong>PNG to JPG</strong>
+                <span class="dropdown-item-desc">Compress & fill white backgrounds</span>
+              </div>
+            </a>
+            <a href="webp-converter.html" class="dropdown-item">
+              <div>
+                <strong>WEBP Converter</strong>
+                <span class="dropdown-item-desc">Convert to and from next-gen WebP</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="privacy.html" class="nav-link">Privacy</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </nav>
+
+      <button class="hamburger-btn" aria-label="Open mobile navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon" style="width: 2rem; height: 2rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+        </div>
+        <span>ConvertCraft</span>
+      </div>
+      <button class="mobile-drawer-close" aria-label="Close menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">All-in-One Converter</a></li>
+      <li><a href="jpg-to-pdf.html" class="mobile-nav-link">JPG to PDF</a></li>
+      <li><a href="png-to-jpg.html" class="mobile-nav-link active">PNG to JPG</a></li>
+      <li><a href="webp-converter.html" class="mobile-nav-link">WEBP Converter</a></li>
+      <li><a href="privacy.html" class="mobile-nav-link">Privacy Policy</a></li>
+      <li><a href="faq.html" class="mobile-nav-link">Help & FAQ</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          <span>Optimized PNG to JPG Transformation</span>
+        </div>
+        <h1 class="hero-title">Convert PNG to <span class="hero-gradient-text">JPG Format</span></h1>
+        <p class="hero-subtitle">
+          Reduce image file sizes by up to 80%. Convert single or batch PNG images into optimized JPGs with intelligent white background blending for transparent areas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Converter Workspace Section -->
+    <section class="workspace-wrapper">
+      <div class="container">
+        <div class="workspace-card">
+
+          <!-- Dropzone Area -->
+          <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Drop files here or click to browse">
+            <input type="file" id="file-input" class="file-input-hidden" multiple accept="image/png,image/jpeg,image/webp,image/gif,image/bmp" />
+            <div class="dropzone-icon-wrap">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+            </div>
+            <h2 class="dropzone-title">Select or Drop PNG Files Here</h2>
+            <p class="dropzone-subtitle">Drop multiple PNG files to convert them all in a single batch</p>
+            <button type="button" class="dropzone-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"></path></svg>
+              <span>Choose PNG Images</span>
+            </button>
+            <div class="dropzone-hints">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span>Batch conversions will be bundled into a single organized ZIP archive</span>
+            </div>
+          </div>
+
+          <!-- Conversion Settings Toolbar -->
+          <div class="settings-toolbar">
+            <div class="toolbar-row">
+              <div class="toolbar-group">
+                <span class="toolbar-label">Target Format</span>
+                <div class="format-pills">
+                  <button type="button" class="format-pill-btn" data-format="pdf">PDF Document</button>
+                  <button type="button" class="format-pill-btn active" data-format="jpg">JPG / JPEG</button>
+                  <button type="button" class="format-pill-btn" data-format="png">PNG</button>
+                  <button type="button" class="format-pill-btn" data-format="webp">WEBP</button>
+                  <button type="button" class="format-pill-btn" data-format="bmp">BMP</button>
+                </div>
+              </div>
+
+              <!-- Image Options Group -->
+              <div class="toolbar-group" id="image-options-group" style="display: flex;">
+                <div id="quality-slider-row">
+                  <span class="toolbar-label">Compression Quality</span>
+                  <div class="slider-container">
+                    <input type="range" id="quality-slider" class="custom-range" min="10" max="100" value="90" step="1" />
+                    <span class="slider-val-badge" id="quality-badge">90%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PDF Options Group -->
+              <div class="toolbar-group" id="pdf-options-group" style="display: none;">
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <div>
+                    <span class="toolbar-label">Page Orientation</span>
+                    <div class="segmented-control">
+                      <button type="button" class="segmented-btn active" data-orientation="portrait">Portrait</button>
+                      <button type="button" class="segmented-btn" data-orientation="landscape">Landscape</button>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="toolbar-label">Margins</span>
+                    <div class="segmented-control">
+                      <button type="button" class="segmented-btn active" data-margin="none">None</button>
+                      <button type="button" class="segmented-btn" data-margin="small">Small</button>
+                      <button type="button" class="segmented-btn" data-margin="large">Large</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Selected Images Management Section -->
+          <section class="queue-section" id="queue-section">
+            <div class="queue-header">
+              <h3 class="queue-title">
+                <span>Images to Convert</span>
+                <span class="queue-badge" id="queue-count-badge">0 files</span>
+                <span id="queue-total-size" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;"></span>
+              </h3>
+            </div>
+
+            <div id="empty-queue-msg" class="empty-queue-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin: 0 auto 0.75rem; color: var(--text-light);"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+              <p>Add PNG files above to begin quick conversion.</p>
+            </div>
+
+            <!-- Dynamic Image Grid -->
+            <div class="image-grid" id="image-grid"></div>
+
+            <!-- Global Action Bar -->
+            <div class="action-bar">
+              <div class="action-bar-left">
+                <button type="button" class="btn-danger-outline" id="clear-all-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                  <span>Clear All</span>
+                </button>
+                <button type="button" class="btn-secondary" id="add-more-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"></path></svg>
+                  <span>Add More Files</span>
+                </button>
+              </div>
+              <button type="button" class="btn-primary-cta" id="convert-btn" disabled>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span class="btn-cta-text">Convert & Download JPG</span>
+              </button>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Information & Guide Section -->
+    <section class="info-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Feature Spotlight</span>
+          <h2 class="section-title">Transparent PNG to Clean JPG</h2>
+          <p class="section-desc">Understand how ConvertCraft solves common conversion defects.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 class="step-card-title">Pure White Background</h3>
+            <p class="step-card-desc">Unlike inferior converters that turn transparent regions into black rectangles, ConvertCraft renders a crisp solid white canvas underneath.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 class="step-card-title">Adjustable Compression</h3>
+            <p class="step-card-desc">Balance image clarity and file weight. Dial in 90% for crystal clarity or 70% for lightweight website performance.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 class="step-card-title">Batch ZIP Archive</h3>
+            <p class="step-card-desc">When converting dozens of PNG assets, our client-side JSZip engine packages all converted images into one zip file automatically.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 ConvertCraft. 100% Client-Side In-Browser Processing. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> &bull; <a href="faq.html">FAQ</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/ui-helpers.js"></script>
+  <script src="js/converter.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

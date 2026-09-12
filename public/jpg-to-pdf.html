@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convert JPG to PDF Online - Free, Fast & 100% Private | ConvertCraft</title>
+  <meta name="description" content="Convert your JPG, JPEG, and PNG images into high-quality multi-page PDF documents locally in your browser. No file size limits, no server uploads, 100% free and secure." />
+  <meta name="keywords" content="jpg to pdf, convert jpg to pdf, image to pdf, compile pdf online, multi page pdf, private pdf converter" />
+
+  <!-- Open Graph / Schema.org -->
+  <meta property="og:title" content="Convert JPG to PDF Online - 100% Private & Free" />
+  <meta property="og:description" content="Combine JPG photos into a single multi-page PDF directly in your browser. Zero server uploads." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ConvertCraft JPG to PDF Converter",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Convert JPG images into professional multi-page A4 PDF documents with custom margins and orientations."
+  }
+  </script>
+
+  <!-- Unified Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Third-Party Libraries (CDN only) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body data-target-format="pdf">
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="ConvertCraft Home">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+        </div>
+        <span>Convert<span class="hero-gradient-text">Craft</span></span>
+        <span class="brand-badge">PRO</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <div class="nav-dropdown">
+          <button type="button" class="dropdown-toggle" aria-expanded="false">
+            <span>Tools</span>
+            <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item">
+              <div>
+                <strong>All Tools (Workspace)</strong>
+                <span class="dropdown-item-desc">Universal image & PDF workshop</span>
+              </div>
+            </a>
+            <a href="jpg-to-pdf.html" class="dropdown-item">
+              <div>
+                <strong>JPG to PDF</strong>
+                <span class="dropdown-item-desc">Compile multi-page PDF documents</span>
+              </div>
+            </a>
+            <a href="png-to-jpg.html" class="dropdown-item">
+              <div>
+                <strong>PNG to JPG</strong>
+                <span class="dropdown-item-desc">Compress & fill white backgrounds</span>
+              </div>
+            </a>
+            <a href="webp-converter.html" class="dropdown-item">
+              <div>
+                <strong>WEBP Converter</strong>
+                <span class="dropdown-item-desc">Convert to and from next-gen WebP</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="privacy.html" class="nav-link">Privacy</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </nav>
+
+      <button class="hamburger-btn" aria-label="Open mobile navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon" style="width: 2rem; height: 2rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+        </div>
+        <span>ConvertCraft</span>
+      </div>
+      <button class="mobile-drawer-close" aria-label="Close menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">All-in-One Converter</a></li>
+      <li><a href="jpg-to-pdf.html" class="mobile-nav-link active">JPG to PDF</a></li>
+      <li><a href="png-to-jpg.html" class="mobile-nav-link">PNG to JPG</a></li>
+      <li><a href="webp-converter.html" class="mobile-nav-link">WEBP Converter</a></li>
+      <li><a href="privacy.html" class="mobile-nav-link">Privacy Policy</a></li>
+      <li><a href="faq.html" class="mobile-nav-link">Help & FAQ</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          <span>Dedicated JPG to PDF Converter</span>
+        </div>
+        <h1 class="hero-title">Convert JPG Images to <span class="hero-gradient-text">PDF Document</span></h1>
+        <p class="hero-subtitle">
+          Combine multiple JPG files into a single structured A4 PDF. Reorder pages with drag-and-drop, rotate orientations, and download in seconds with zero uploads.
+        </p>
+      </div>
+    </section>
+
+    <!-- Converter Workspace Section -->
+    <section class="workspace-wrapper">
+      <div class="container">
+        <div class="workspace-card">
+
+          <!-- Dropzone Area -->
+          <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Drop files here or click to browse">
+            <input type="file" id="file-input" class="file-input-hidden" multiple accept="image/jpeg,image/png,image/webp,image/gif,image/bmp,image/svg+xml" />
+            <div class="dropzone-icon-wrap">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="12" y1="18" x2="12" y2="12"></line>
+                <line x1="9" y1="15" x2="15" y2="15"></line>
+              </svg>
+            </div>
+            <h2 class="dropzone-title">Select or Drop JPG Images Here</h2>
+            <p class="dropzone-subtitle">Drop multiple JPGs to combine them into one multi-page PDF</p>
+            <button type="button" class="dropzone-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"></path></svg>
+              <span>Choose JPG Photos</span>
+            </button>
+            <div class="dropzone-hints">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span>Instant in-browser processing &bull; Reorder pages before exporting</span>
+            </div>
+          </div>
+
+          <!-- Conversion Settings Toolbar -->
+          <div class="settings-toolbar">
+            <div class="toolbar-row">
+              <div class="toolbar-group">
+                <span class="toolbar-label">Target Format</span>
+                <div class="format-pills">
+                  <button type="button" class="format-pill-btn active" data-format="pdf">PDF Document</button>
+                  <button type="button" class="format-pill-btn" data-format="jpg">JPG / JPEG</button>
+                  <button type="button" class="format-pill-btn" data-format="png">PNG</button>
+                  <button type="button" class="format-pill-btn" data-format="webp">WEBP</button>
+                  <button type="button" class="format-pill-btn" data-format="bmp">BMP</button>
+                </div>
+              </div>
+
+              <!-- PDF Options Group -->
+              <div class="toolbar-group" id="pdf-options-group" style="display: flex;">
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <div>
+                    <span class="toolbar-label">Page Orientation</span>
+                    <div class="segmented-control">
+                      <button type="button" class="segmented-btn active" data-orientation="portrait">Portrait</button>
+                      <button type="button" class="segmented-btn" data-orientation="landscape">Landscape</button>
+                    </div>
+                  </div>
+                  <div>
+                    <span class="toolbar-label">Margins</span>
+                    <div class="segmented-control">
+                      <button type="button" class="segmented-btn active" data-margin="none">None (Full)</button>
+                      <button type="button" class="segmented-btn" data-margin="small">Small (10mm)</button>
+                      <button type="button" class="segmented-btn" data-margin="large">Large (20mm)</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Image Options Group -->
+              <div class="toolbar-group" id="image-options-group" style="display: none;">
+                <div id="quality-slider-row">
+                  <span class="toolbar-label">Compression Quality</span>
+                  <div class="slider-container">
+                    <input type="range" id="quality-slider" class="custom-range" min="10" max="100" value="90" step="1" />
+                    <span class="slider-val-badge" id="quality-badge">90%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Selected Images Management Section -->
+          <section class="queue-section" id="queue-section">
+            <div class="queue-header">
+              <h3 class="queue-title">
+                <span>PDF Pages Queue</span>
+                <span class="queue-badge" id="queue-count-badge">0 files</span>
+                <span id="queue-total-size" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;"></span>
+              </h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">
+                Drag thumbnails to reorder pages in the final PDF
+              </p>
+            </div>
+
+            <div id="empty-queue-msg" class="empty-queue-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin: 0 auto 0.75rem; color: var(--text-light);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <p>Add JPG images to preview pages and build your PDF document.</p>
+            </div>
+
+            <!-- Dynamic Image Grid -->
+            <div class="image-grid" id="image-grid"></div>
+
+            <!-- Global Action Bar -->
+            <div class="action-bar">
+              <div class="action-bar-left">
+                <button type="button" class="btn-danger-outline" id="clear-all-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                  <span>Clear All</span>
+                </button>
+                <button type="button" class="btn-secondary" id="add-more-btn">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"></path></svg>
+                  <span>Add More Files</span>
+                </button>
+              </div>
+              <button type="button" class="btn-primary-cta" id="convert-btn" disabled>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span class="btn-cta-text">Convert & Download PDF</span>
+              </button>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Step-by-Step Guide -->
+    <section class="info-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Step-by-Step Instructions</span>
+          <h2 class="section-title">How to Convert JPG to PDF in 3 Easy Steps</h2>
+          <p class="section-desc">Create professional, printable PDF documents in under 10 seconds.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 class="step-card-title">Select Your JPG Photos</h3>
+            <p class="step-card-desc">Click 'Browse Files' or drag multiple JPG files into the dropzone. You can upload as many images as you need.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 class="step-card-title">Arrange Page Sequence</h3>
+            <p class="step-card-desc">Drag and drop the thumbnail cards to set the order of the pages. Use the rotate buttons to fix orientation.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 class="step-card-title">Export Clean PDF</h3>
+            <p class="step-card-desc">Click 'Convert & Download PDF'. Your browser compiles all images into a standard A4 document without uploading a single byte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep Dive SEO Content -->
+    <section class="info-section" style="background: rgba(255, 255, 255, 0.5);">
+      <div class="container" style="max-width: 860px;">
+        <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 1rem;">Why Convert JPG to PDF with ConvertCraft?</h2>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+          PDF is the universal standard for sharing and archiving documents across mobile phones, tablets, and desktop computers. When sending receipts, signed contracts, or portfolios, combining loose JPG images into a single multi-page PDF ensures consistent formatting, easier printing, and seamless email attachment.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+          <div style="background: var(--white); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--primary);">Standard A4 Geometry</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Automatically scales images to fit standard 210 x 297 mm paper dimensions without stretching or distortion.</p>
+          </div>
+          <div style="background: var(--white); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--primary);">Full Margin Control</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Choose edge-to-edge full bleed (None), standard 10mm margins for office printing, or spacious 20mm margins for binders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 ConvertCraft. 100% Client-Side In-Browser Processing. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> &bull; <a href="faq.html">FAQ</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/ui-helpers.js"></script>
+  <script src="js/converter.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
