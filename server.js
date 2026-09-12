@@ -5,6 +5,7 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const HOST = '0.0.0.0';
 
 // Enable Cross-Origin Resource Sharing
 app.use(cors());
@@ -194,11 +195,11 @@ app.use((err, req, res, next) => {
 });
 
 // Start Express Server
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
   console.log('====================================================');
   console.log('  ConvertCraft - Production Image & PDF Converter   ');
   console.log('====================================================');
-  console.log(`> Server running on: http://localhost:${PORT}`);
+  console.log(`> Server running on: http://${HOST}:${PORT}`);
   console.log(`> Mode: Client-Side First (Zero Server Storage)`);
   console.log(`> Static files served from: ${publicPath}`);
   console.log('====================================================');
